@@ -36,10 +36,13 @@ function game(){
         console.log('Computer selection: ' + computerSelection)
         let currentGame = play(playerSelection, computerSelection)
         console.log(currentGame)
-        
+        if (currentGame == 'You won!') {++playerScore}
+        else if (currentGame == 'You lost') {++computerScore}
+        console.log('Your current score: ' + playerScore)
+        console.log('Computer current score: ' + computerScore)
+
     }
 }
-
 
 
 </script>
