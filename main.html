@@ -6,7 +6,43 @@
 </head>
 <body>
 
-<script></script>
+<script>
+
+    function computerPlay(){
+        let rando = Math.floor(Math.random() * Math.floor(3));
+        if (rando == 1) {return 'Rock'}
+        else if (rando == 2) {return 'Paper'}
+        else {return 'Scissors'}
+    }
+
+    function play(playerSelection, computerSelection){
+        if (computerSelection.toLowerCase() == playerSelection.toLowerCase()){return 'Tied Game!'}
+        else if (
+            (computerSelection == 'Rock' && playerSelection.toLowerCase() == 'paper') ||
+            (computerSelection == 'Paper' && playerSelection.toLowerCase() == 'scissors') || 
+            (computerSelection == 'Scissors' && playerSelection.toLowerCase() == 'rock')
+            ){return 'You won!'}
+        else return 'You lost';
+    }
+
+function game(){
+    let playerScore = 0;
+    let computerScore = 0;
+
+    for(i=0; i<5; i++) {
+        let computerSelection = computerPlay()    
+        let playerSelection = prompt("Rock, paper, or scissors?")
+        console.log('Your selection: ' + playerSelection)
+        console.log('Computer selection: ' + computerSelection)
+        let currentGame = play(playerSelection, computerSelection)
+        console.log(currentGame)
+        
+    }
+}
+
+
+
+</script>
 
 </body>
 </html>
