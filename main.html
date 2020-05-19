@@ -1,47 +1,57 @@
 <!DOCTYPE HTML>
 <html lang = "en">
 <head>
-  <title>Justin's Rock Paper Scissors.html</title>
+  <title>Justin's Rock Paper Scissors</title>
   <meta charset = "UTF-8" />
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
+<!-- Title-->
+
 <div id="title-div">
 	<p">Make a choice to play Rock, Paper, Scissors</p>	
 </div>
 
+<!-- Player Choice Buttons -->
+
 <div id="player-selection">
 	<button type="button" id="Paper" class="player-button">
-		<i class="fas fa-hand-paper"></i>
-		<span>Paper</span>	
+		<i id="Paper" class="fas fa-hand-paper"></i>
+		<span id="Paper">Paper</span>	
 	</button>	
 	<button type="button" id="Rock" class="player-button">
-		<i class="fas fa-hand-rock"></i>
-		<span>Rock</span>	
+		<i id="Rock" class="fas fa-hand-rock"></i>
+		<span id="Rock" >Rock</span>	
 	</button>	
 	<button type="button" id="Scissors" class="player-button">
-		<i class="fas fa-hand-scissors"></i>
-		<span>Scissors</span>	
+		<i id="Scissors" class="fas fa-hand-scissors"></i>
+		<span id="Scissors">Scissors</span>	
 	</button>	
 </div>
 
+<!-- P element that states result of latest round -->
+
 <p id="result-recorder" class="results">No games played yet</p>	
 
+<!-- Boxes that display player and computer scores -->
+
 <div>
-	<div class="score-divider">
-		<div>Computer's Score</div>	
-		<div id="comp-score" class="score">0</div>	
-	</div>
 	<div class="score-divider">
 		<div>Player's Score</div>	
 		<div id="player-score" class="score">0</div>
 	</div>	
+	<div class="score-divider">
+		<div>Computer's Score</div>	
+		<div id="comp-score" class="score">0</div>	
+	</div>
 </div>	
 
 <p id="final-result-text" class="results">Play until someone wins 5 rounds</p>	
 
+<!-- Link to JS file with game logic-->
 <script src="main.js"></script>
+<!-- Link to icon locations at FontAwesome -->
 <script src="https://kit.fontawesome.com/af98bcf798.js" crossorigin="anonymous"></script>
 </body>
 </html>

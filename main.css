@@ -71,8 +71,8 @@ div {
 }
 
 .player-button {
-  background-color: teal; 
-  border: 1px solid blue;
+  background-color: #FF7558; 
+  border: 1px solid #51516D;
   border-radius: 5%;
   color: white;
   padding: 15px 32px;
