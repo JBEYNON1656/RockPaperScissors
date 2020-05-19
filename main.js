@@ -25,10 +25,14 @@ let computerScoreText = document.querySelector("#comp-score")
 let playerScore = 0
 let computerScore = 0
 
+if (playerScore === 5) {finalResultText.textContent = "Congrats you won!"}
+    else if (computerScore === 5) {finalResultText.textContent = "Too bad, computer won!"}
+
+
 
 document.querySelectorAll(".player-button").forEach(item => {
   item.addEventListener('click', event => {
-    let round = playRound(event.target.textContent);
+    let round = playRound(event.target.id);
 
     if (playerScore < 5 && computerScore < 5){
         resultRecorder.textContent = round
@@ -37,8 +41,9 @@ document.querySelectorAll(".player-button").forEach(item => {
         playerScoreText.textContent = playerScore.toString()
         computerScoreText.textContent = computerScore.toString()
          }
-    else if (playerScore === 5) {finalResultText.textContent = "Congrats you won!"}
-    else if (computerScore === 5) {finalResultText.textContent = "Too bad, computer won!"}
+    if (playerScore === 5) {finalResultText.textContent = "Congrats you won!"}
+        else if (computerScore === 5) {finalResultText.textContent = "Too bad, computer won!"}
+
 })
 }) 
 

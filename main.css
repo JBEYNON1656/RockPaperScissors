@@ -71,8 +71,9 @@ div {
 }
 
 .player-button {
-  background-color: blue; 
-  border: none;
+  background-color: teal; 
+  border: 1px solid blue;
+  border-radius: 5%;
   color: white;
   padding: 15px 32px;
   margin: 15px 32px;
@@ -93,8 +94,10 @@ div {
 
 .score-divider {
 	display: inline-block;
-	width: 48%;
+	width:300px;
 	border: 1px solid black;
+	padding: 10px;
+	margin: auto 50px;
 }
 
 .score {
